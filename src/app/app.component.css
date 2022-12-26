@@ -1,0 +1,213 @@
+.phone-book {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.phone-book .phone-book-title {
+  color: #b61010;
+  border-bottom: 1px solid #bababa;
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+.phone-book .input-wrapper {
+  padding: 10px 0;
+  border-bottom: 1px solid #bababa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.phone-book .input-wrapper .input-text-field {
+  width: 84%;
+  margin-right: 10px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #bababa;
+}
+
+.phone-book .input-wrapper .input-btn {
+  width: 15%;
+  height: 25px;
+  background-color: lightgreen;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.phone-book .input-wrapper .input-btn:hover {
+  background-color: green;
+  color: white;
+}
+
+.phone-book .phone-book-table {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.phone-book .phone-book-table .table_head {
+  width: 100%;
+}
+
+.phone-book .phone-book-table .table_head tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 10px;
+}
+
+.phone-book .phone-book-table .table_head tr > th {
+  font-weight: 600;
+  width: 133px;
+  text-align: center;
+}
+
+.phone-book .phone-book-table .table_body {
+  width: 100%;
+}
+
+.phone-book .phone-book-table .table_body tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  border-bottom: 1px solid #bababa;
+  padding: 5px 0;
+}
+
+.phone-book .phone-book-table .table_body tr > td {
+  width: 111px;
+}
+
+.phone-book .phone-book-table .table_body tr > td .user-edit-btn, .phone-book .phone-book-table .table_body tr > td .user-delete-btn {
+  background-color: yellow;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+  height: 23px;
+}
+
+.phone-book .phone-book-table .table_body tr > td .user-edit-btn:hover, .phone-book .phone-book-table .table_body tr > td .user-delete-btn:hover {
+  background-color: orange;
+}
+
+.phone-book .phone-book-table .table_body tr > td .user-delete-btn {
+  background-color: #ff5c5c;
+  color: white;
+}
+
+.phone-book .phone-book-table .table_body tr > td .user-delete-btn:hover {
+  background-color: red;
+}
+
+.phone-book .phone-book-window {
+  width: 380px;
+  height: 280px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.phone-book .phone-book-window h3 {
+  padding: 5px;
+  border-bottom: 1px solid #bababa;
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+.phone-book .phone-book-window button {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: none;
+}
+
+.phone-book .phone-book-window button .fa-xmark {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.phone-book .phone-book-window button .fa-xmark:hover {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.phone-book .phone-book-window .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.phone-book .phone-book-window .wrapper input {
+  margin: 10px 0;
+  height: 30px;
+  border: 1px solid #bababa;
+  border-radius: 5px;
+}
+
+.phone-book .phone-book-window .wrapper input:focus {
+  -webkit-box-shadow: 0 0 5px 5px rgba(62, 85, 239, 0.381);
+          box-shadow: 0 0 5px 5px rgba(62, 85, 239, 0.381);
+  outline: none;
+}
+
+.phone-book .phone-book-window .phone-book-window-footer {
+  width: 100%;
+  height: 30px;
+  border-top: 1px solid #bababa;
+}
+
+.phone-book .phone-book-window .phone-book-window-footer .btn-save {
+  width: 95%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5b96f6;
+  margin: 20px auto;
+  display: block;
+  color: white;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.phone-book .phone-book-window .phone-book-window-footer .btn-save:hover {
+  background-color: #0e6bff;
+}
+
+.phone-book .error {
+  border: 2px solid red !important;
+  outline: none;
+}
+/*# sourceMappingURL=app.component.css.map */
